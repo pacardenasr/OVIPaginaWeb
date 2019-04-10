@@ -1,0 +1,61 @@
+#Introducción{
+  text-align: justify;
+  font-size: 20px;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#Obj{
+  display: flex;
+  margin: 0 30px;
+}
+#Obj #noticiasUNAD{
+  float:right;
+	width: 25%;
+	height: 440px;
+	background-color:#003C41;
+	overflow-y: scroll;
+}
+#noticiasUNAD #titulo{
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  width: auto;
+}
+#Obj #OG{
+  background: rgb(244, 208, 63);
+  width: 50%;
+	height: 50%;
+  margin: 0 1%;
+}
+
+#OG h3{
+  text-align: center;
+  font-size: 28px;
+  width: auto;
+  margin: 15px;
+}
+#OG p{
+  text-align:justify;
+  font-size: 20px;
+  width: auto;
+  margin: 15px 20px;
+}
+ #Obj #OE{
+    background: rgb(174, 214, 241);
+    width: 50%;
+   	height: 50%;
+    margin: 0 1%;
+  }
+ #OE h3{
+   text-align: center;
+   font-size: 28px;
+   width: auto;
+   margin: 15px;
+ }
+#OE ul{
+  text-align:justify;
+  font-size: 20px;
+  width: auto;
+  margin: 15px 20px;
+}
