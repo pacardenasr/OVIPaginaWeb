@@ -32,7 +32,7 @@ nav #menu{
   position: relative;
 }
 #menu li a:hover{
-  color: #000CFF;
+  color: rgb(46, 46, 51);
 }
 #menu >li > a{
   color: white;
@@ -59,7 +59,7 @@ nav #menu{
   text-align: center;
 }
 #submenu1 li a:hover{
-  color: #0000FF;
+  color: rgb(46, 46, 51);
 }
 #menu li:hover #submenu2{
   display: block;
