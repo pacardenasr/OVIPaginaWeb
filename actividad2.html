@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Instalación - Administración de Base de Datos</title>
+    <title>Actividad de Base de Datos</title>
     <meta description = "sitio web sobre la administración de base de datos "/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -53,22 +53,62 @@
       </nav>
 
 <section>
-        <article id="article">
-           <h2 id = "subtitulo">Instalación Paso a Paso de SQL Server</h2>
-            <p>
-                Descargar e Instalar SQL Server 2017 y SSMS Ultima Versión.
-                En este video te enseñare paso a paso como Descargar SQL Server 2017 y su interfaz de usuario SSMS.
-
-            </p>
-        </article>
-    </section>
-
-<section class="video">
   <article id = "article" >
-    <iframe width="676" height="381" src="https://www.youtube.com/embed/jDYA3xhq7Ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <h3 class="subtitulo"> Creación de Tablas en SQL Server</h3>
+
+        <p class="parrafo3">Una tabla es una estructura de datos que organiza los datos en columnas y filas; cada columna es un campo (o atributo) y cada fila, un registro. La intersección de una columna con una fila, contiene un dato específico, un solo valor.</p>
+        <p class="parrafo3">Cada registro contiene un dato por cada columna de la tabla.<br>
+            Cada campo (columna) debe tener un nombre. El nombre del campo hace referencia a la información que almacenará.<br>
+            Cada campo (columna) también debe definir el tipo de dato que almacenará.
+        </p>
+        <p class="parrafo3">
+        la siguiente actividad se puede validar en el siguiente validador de código SQL
+        </p>
+
+        <a href="https://www.eversql.com/sql-syntax-check-validator/" target="_blank"> Validar código SQL</a>
+
+
+        <hr>
+        <h3 class="subtitulo"> Primer problema: </h3>
+        <p class="parrafo3">
+                Necesita almacenar los datos de sus amigos en una tabla. Los datos que guardará serán: apellido,  nombre, domicilio y teléfono.
+        </p>
+        <p class="parrafo3">
+                Elimine la tabla "agenda" si existe:
+        </p>   
+ 
+        <code class="codigo">
+            if object_id('agenda') is not null drop table agenda;
+        </code>
+                
+        <p class="parrafo3">
+            Intente crear una tabla llamada "/agenda":
+        </p>
+                 
+        <code class="codigo">
+                create table /agenda( apellido varchar(30), nombre varchar(20), domicilio varchar(30), telefono varchar(11));
+        </code>
+        
+        <p class="parrafo3">
+                Aparece un mensaje de error porque usamos un caracter inválido ("/") para el nombre.
+        </p>
+        
+        
+        <p class="parrafo3"> 
+        Cree una tabla llamada "agenda", debe tener los siguientes campos: apellido, varchar(30); nombre, 
+                varchar(20); domicilio, varchar (30) y telefono, varchar(11):
+        </p>
+            
+        <code class="codigo">
+                create table agenda( apellido varchar(30), nombre varchar(20), domicilio varchar(30), telefono varchar(11) );
+        </code>
+        
+        <br><br>
+                                  
   </article >
 </section>
-    
+
 <footer class="footer">
     <br>
       <p>Copyright (C) 2019 UNAD - Todos los derechos Reservados.</p>
@@ -77,5 +117,6 @@
       <hr>
       <a href="https://www.contadorvisitasgratis.com" title="contador web"><img src="https://counter6.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=9gyamy1xu8g96zdqjjyprk3jpfla6aj3"  title="contador web" alt="contador web"></a>   
   </footer>
+
 </body>
 </html>

@@ -148,6 +148,12 @@ footer img{
   text-align: center;
 }
 
+.codigo{
+  font-style: italic;
+  font-size: 13px;
+  background-color: rgb(184, 185, 187);
+}
+
 /**
  * Estilo pagina Autores
  */
